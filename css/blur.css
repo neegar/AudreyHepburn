@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+*{
+    box-sizing: border-box;
+}
+.my-photo{
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201601/audreystory_647_012016044848.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);    
+}
+.my-bio{
+    color: rgb(182, 108, 23);
+    font-weight: bold;
+    border: 3px solid #a8a6a581;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.my-bio::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+    top: 0; 
+}

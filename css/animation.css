@@ -1,0 +1,28 @@
+body {
+    padding: 50px;
+}
+
+.pink-box{
+    background: pink;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    animation: myframes 2s ease-in-out 0s infinite; 
+}
+
+@keyframes myframes { 
+ 0% {
+    height: 200px;
+}
+
+30%, 100%{
+    width: 400px;
+}
+
+70% {
+    height: 500px;
+    background-color: orange;
+}
+
+} 

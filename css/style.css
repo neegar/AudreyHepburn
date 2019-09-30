@@ -1,0 +1,43 @@
+body{
+    padding: 50px;  
+}
+.trigger{
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+    background: #ddd;
+    
+}
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: pink;
+    transition: transform 300ms ease-in-out;
+    pointer-events: none;
+}
+.trigger:hover .box{
+    transform: translate(200px, 150px) rotate(50deg);
+
+}
+
+.trigger1{
+    width: 200px;
+    height: 200px;
+    border: 20px solid #999;
+    background: #ddd;
+    margin: 50px;
+}
+.box1{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgb(161, 252, 76);
+    transition: transform 300ms cubic-bezier(0, 0.47, 0.32, 1.97);
+    pointer-events: none;
+}
+
+.trigger1:hover .box1{
+    transform: translate(200px, 150px) rotate(50deg);
+
+}
